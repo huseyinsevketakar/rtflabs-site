@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RTFLabs · İHA Bant Sonu Test Kabini</title>
+<meta name="description" content="RTFLabs, seri üretim yapan İHA firmaları için yapay zekâ destekli bant sonu test kabini geliştiriyor.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RTFLabs · İHA Bant Sonu Test Kabini">
+<meta property="og:description" content="Seri üretilen İHA'lar için yapay zekâ destekli bant sonu test kabini.">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top" id="site-top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="RTFLabs">
+      <svg viewBox="0 0 200 200" width="30" height="30" aria-hidden="true"><path d="M76.4 76.4 L123.6 123.6 M123.6 76.4 L76.4 123.6" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><circle cx="58" cy="58" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="58" r="26" fill="#E2231A" stroke="#E2231A" stroke-width="13"/><circle cx="58" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+      <span>RTF<span class="labs">Labs</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Site">
+      <a href="#nasil" data-i18n="nav.how">Nasıl çalışır</a>
+      <a href="#testler" data-i18n="nav.tests">Testler</a>
+      <a href="#veri" data-i18n="nav.ai">Yapay zekâ</a>
+      <a href="ekip.html" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menü"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5 H18 M2 10 H18 M2 15 H18"/></svg></button>
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button type="button" id="lang-tr" data-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-red" href="iletisim.html#mesaj" data-i18n="nav.cta">Pilot üretici olun</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero grid-bg" aria-labelledby="h-hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero.kicker">İHA bant sonu test kabini · konsept</p>
+        <h1 id="h-hero"><span data-i18n="hero.h1a">Test uçuşu değil.</span> <span class="r" data-i18n="hero.h1b">Test kabini.</span></h1>
+        <p class="lede" data-i18n="hero.lede">Seri üretilen İHA'lar için yapay zekâ destekli bant sonu test kabini. Her araç sahaya çıkmadan önce aynı prosedürle ölçülür, karara bağlanır ve kayda geçer.</p>
+        <div class="cta-row">
+          <a class="btn btn-red" href="iletisim.html#mesaj" data-i18n="hero.cta1">Pilot üretici olun</a>
+          <a class="btn btn-line" href="#nasil" data-i18n="hero.cta2">Nasıl çalışır</a>
+        </div>
+        <p class="status"><i aria-hidden="true"></i><span data-i18n="hero.status">Prototip geliştiriliyor · Ankara</span></p>
+      </div>
+
+      <figure class="cabin-fig">
+        <svg viewBox="0 0 520 560" role="img" aria-labelledby="cabin-t">
+          <title id="cabin-t">Test kabini çizimi: termal kamera, görüntü işleme kameraları, koruma kafesi, yük hücresi, titreşim platformu, güç kaynağı ve uç bilgisayar</title>
+          <defs>
+            <pattern id="mesh" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0 H0 V16" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/></pattern>
+            <linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E2231A" stop-opacity="0"/><stop offset="1" stop-color="#E2231A" stop-opacity=".28"/></linearGradient>
+            <clipPath id="cageClip"><rect x="110" y="170" width="260" height="220"/></clipPath>
+          </defs>
+          <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="70" y="30" width="400" height="470" stroke="#3A3A42" stroke-width="2"/>
+            <path d="M40 60 L70 30 M440 60 L470 30 M440 530 L470 500" stroke="#3A3A42" stroke-width="2"/>
+            <rect x="330" y="14" width="100" height="30" rx="4" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <rect x="40" y="60" width="400" height="470" stroke="#F3F3F1" stroke-width="3" fill="none"/>
+            <path d="M40 450 H440" stroke="#F3F3F1" stroke-width="2.5"/>
+            <rect x="110" y="170" width="260" height="220" fill="url(#mesh)" stroke="#F3F3F1" stroke-width="2"/>
+            <g clip-path="url(#cageClip)"><g class="scan"><rect x="110" y="140" width="260" height="30" fill="url(#scanG)" stroke="none"/><path d="M110 170 H370" stroke="#E2231A" stroke-width="2"/></g></g>
+            <rect x="212" y="72" width="56" height="30" rx="5" stroke="#E2231A" stroke-width="2.5" fill="#0B0B0C"/>
+            <circle cx="240" cy="102" r="7" stroke="#E2231A" stroke-width="2.5" fill="#0B0B0C"/>
+            <path d="M234 110 L130 170 M246 110 L350 170" stroke="#E2231A" stroke-width="1.5" stroke-dasharray="5 7" opacity=".7"/>
+            <g transform="translate(74 112) rotate(35)" stroke="#F3F3F1" stroke-width="2"><rect x="-14" y="-9" width="22" height="18" rx="3" fill="#0B0B0C"/><path d="M8 -5 L16 -9 L16 9 L8 5 Z" fill="#0B0B0C"/></g>
+            <g transform="translate(406 112) rotate(145)" stroke="#F3F3F1" stroke-width="2"><rect x="-14" y="-9" width="22" height="18" rx="3" fill="#0B0B0C"/><path d="M8 -5 L16 -9 L16 9 L8 5 Z" fill="#0B0B0C"/></g>
+            <path d="M150 410 l-8 5 l16 6 l-16 6 l16 6 l-16 6 l8 5 M210 410 l-8 5 l16 6 l-16 6 l16 6 l-16 6 l8 5 M270 410 l-8 5 l16 6 l-16 6 l16 6 l-16 6 l8 5 M330 410 l-8 5 l16 6 l-16 6 l16 6 l-16 6 l8 5" stroke="#A8A8AF" stroke-width="2"/>
+            <rect x="130" y="400" width="220" height="10" rx="2" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <rect x="232" y="300" width="16" height="100" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <rect x="222" y="340" width="36" height="24" rx="3" stroke="#E2231A" stroke-width="2.5" fill="#0B0B0C"/>
+            <path d="M229 352 H251" stroke="#E2231A" stroke-width="2"/>
+            <rect x="190" y="292" width="100" height="8" rx="2" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <path d="M155 268 H325" stroke="#F3F3F1" stroke-width="4"/>
+            <path d="M215 278 L207 292 M265 278 L273 292" stroke="#F3F3F1" stroke-width="2.5"/>
+            <rect x="204" y="254" width="72" height="24" rx="4" stroke="#F3F3F1" stroke-width="2.5" fill="#0B0B0C"/>
+            <rect x="148" y="252" width="14" height="16" rx="2" stroke="#F3F3F1" stroke-width="2.5" fill="#0B0B0C"/>
+            <rect x="318" y="252" width="14" height="16" rx="2" stroke="#F3F3F1" stroke-width="2.5" fill="#0B0B0C"/>
+            <path d="M155 252 V245 M325 252 V245 M114 244 H196 M284 244 H366" stroke="#F3F3F1" stroke-width="3"/>
+            <rect x="60" y="470" width="130" height="44" rx="4" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <circle cx="82" cy="492" r="6" stroke="#A8A8AF" stroke-width="2"/><circle cx="104" cy="492" r="6" stroke="#A8A8AF" stroke-width="2"/><circle cx="126" cy="492" r="6" stroke="#A8A8AF" stroke-width="2"/>
+            <rect x="146" y="482" width="30" height="20" rx="2" stroke="#E2231A" stroke-width="2"/>
+            <rect x="290" y="470" width="130" height="44" rx="4" stroke="#F3F3F1" stroke-width="2" fill="#0B0B0C"/>
+            <path d="M304 478 V506 M316 478 V506 M328 478 V506 M340 478 V506 M352 478 V506 M364 478 V506 M376 478 V506 M388 478 V506 M400 478 V506" stroke="#A8A8AF" stroke-width="2"/>
+          </g>
+          <circle cx="344" cy="29" r="4" fill="#E2231A"/>
+          <text x="356" y="34" font-family="JetBrains Mono, monospace" font-size="13" fill="#FF5A4F">TEST</text>
+          <g font-family="JetBrains Mono, monospace" font-size="12" font-weight="500" text-anchor="middle" fill="#fff">
+            <circle cx="292" cy="87" r="11" fill="#E2231A"/><text x="292" y="91">1</text>
+            <circle cx="96" cy="146" r="11" fill="#E2231A"/><text x="96" y="150">2</text>
+            <circle cx="386" cy="190" r="11" fill="#E2231A"/><text x="386" y="194">3</text>
+            <circle cx="278" cy="352" r="11" fill="#E2231A"/><text x="278" y="356">4</text>
+            <circle cx="370" cy="424" r="11" fill="#E2231A"/><text x="370" y="428">5</text>
+            <circle cx="240" cy="492" r="11" fill="#E2231A"/><text x="240" y="496">6</text>
+          </g>
+        </svg>
+        <ol class="legend">
+          <li><b>1</b><span data-i18n="leg.1">Termal kamera</span></li>
+          <li><b>2</b><span data-i18n="leg.2">Görüntü işleme kameraları</span></li>
+          <li><b>3</b><span data-i18n="leg.3">Koruma kafesi</span></li>
+          <li><b>4</b><span data-i18n="leg.4">Yük hücresi · itki ölçümü</span></li>
+          <li><b>5</b><span data-i18n="leg.5">Titreşim platformu</span></li>
+          <li><b>6</b><span data-i18n="leg.6">Güç kaynağı · NVIDIA Jetson</span></li>
+        </ol>
+      </figure>
+    </div>
+    <div class="strip">
+      <div class="wrap">
+        <span class="lab" data-i18n="strip.lab">TEST SIRASI · HEDEF ~5 DK</span>
+        <ol class="seq">
+          <li class="on"><b data-i18n="seq.1">Motor/ESC</b><span>A·rpm</span></li>
+          <li class="on"><b data-i18n="seq.2">İtki</b><span>gf</span></li>
+          <li class="on"><b data-i18n="seq.3">Titreşim</b><span>Hz</span></li>
+          <li><b data-i18n="seq.4">Bağlantı</b><span>IMU</span></li>
+          <li><b data-i18n="seq.5">Servo</b><span>°</span></li>
+          <li><b data-i18n="seq.6">Termal</b><span>°C/s</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="problem" aria-labelledby="h-problem">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Problem</p>
+        <h2 id="h-problem" data-i18n="pb.h">Üretim hızlanıyor. Test yetişemiyor.</h2>
+      </div>
+      <div class="grid4">
+        <div class="cell">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="9" width="24" height="16" rx="3"/><circle cx="10" cy="17" r="3"/><circle cx="20" cy="17" r="3"/><path d="M8 9 L5 3 M22 9 L25 3"/></svg>
+          <h3 data-i18n="pb.1h">Elle test</h3>
+          <p data-i18n="pb.1p">Çoğu üreticide her İHA bir pilotla kısa bir test uçuşuna çıkıyor ya da teknisyen tarafından elle kontrol ediliyor.</p>
+        </div>
+        <div class="cell">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5 H27 L18 15 V25 L12 27 V15 Z"/></svg>
+          <h3 data-i18n="pb.2h">Darboğaz</h3>
+          <p data-i18n="pb.2p">Pilota ve hava koşullarına bağlı test, üretim arttıkça hattın en yavaş halkası oluyor.</p>
+        </div>
+        <div class="cell">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15 C6 8 10 6 15 6 C20 6 24 8 28 15 C24 22 20 24 15 24 C10 24 6 22 2 15 Z"/><circle cx="15" cy="15" r="4"/><path d="M4 26 L26 4"/></svg>
+          <h3 data-i18n="pb.3h">Gözden kaçan hatalar</h3>
+          <p data-i18n="pb.3p">Dengesiz pervane, zayıf lehim, gevşek konektör ve aşırı ısınan ESC kısa bir uçuşta çoğu zaman fark edilmiyor.</p>
+        </div>
+        <div class="cell">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 3 H18 L24 9 V27 H7 Z"/><path d="M18 3 V9 H24"/><path d="M11 15 L19 23 M19 15 L11 23"/></svg>
+          <h3 data-i18n="pb.4h">Kayıt yok</h3>
+          <p data-i18n="pb.4p">Test sonuçları sistematik olarak toplanmadığı için hatanın hangi aşamadan geldiği bulunamıyor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="nasil" aria-labelledby="h-how">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="how.k">Nasıl çalışır</p>
+        <h2 id="h-how" data-i18n="how.h">Dört adım. Her üründe aynı prosedür.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3 data-i18n="how.1h">Yerleştir</h3><p data-i18n="how.1p">Operatör banttan çıkan İHA'yı kabindeki modüler fikstüre yerleştirir.</p></li>
+        <li><h3 data-i18n="how.2h">Test et</h3><p data-i18n="how.2p">Kabin altı testi otomatik çalıştırır; hedef süre ürün başına yaklaşık 5 dakika.</p></li>
+        <li><h3 data-i18n="how.3h">Karar ver</h3><p data-i18n="how.3p">Yapay zekâ ölçümleri sağlam ürün profiliyle karşılaştırır: GEÇTİ ya da KALDI, olası nedeniyle birlikte.</p></li>
+        <li><h3 data-i18n="how.4h">Kaydet</h3><p data-i18n="how.4p">Sonuç seri numarasıyla kalite paneline işlenir.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="testler" aria-labelledby="h-tests">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="ts.k">Testler</p>
+        <h2 id="h-tests" data-i18n="ts.h">Pilotun gözünden kaçanı sensörler ölçer.</h2>
+      </div>
+      <div class="tests">
+        <article class="test"><div class="test-top"><span class="test-no">T01</span><span class="unit">A · rpm</span></div><h3>Motor / ESC</h3><p class="what" data-i18n="t1.w">Motor başına akım ve devir</p><p class="how" data-i18n="t1.h">Programlanabilir güç kaynağı ve ESC telemetrisi (DShot)</p></article>
+        <article class="test"><div class="test-top"><span class="test-no">T02</span><span class="unit">gf</span></div><h3 data-i18n="t2.n">İtki</h3><p class="what" data-i18n="t2.w">Gaz kademelerinde toplam itki</p><p class="how" data-i18n="t2.h">Yük hücresiyle ölçülür, sağlam ürünlerin referans aralığıyla karşılaştırılır.</p></article>
+        <article class="test"><div class="test-top"><span class="test-no">T03</span><span class="unit">Hz</span></div><h3 data-i18n="t3.n">Titreşim · pervane balansı</h3><p class="what" data-i18n="t3.w">Dengesiz pervane, rulman sorunu</p><p class="how" data-i18n="t3.h">İvmeölçer ve mikrofonla motor bazında frekans analizi</p></article>
+        <article class="test"><div class="test-top"><span class="test-no">T04</span><span class="unit" data-i18n="t4.u">kesinti</span></div><h3 data-i18n="t4.n">Titreşim taraması</h3><p class="what" data-i18n="t4.w">Gevşek konektör, kötü lehim</p><p class="how" data-i18n="t4.h">Kısa titreşim altında telemetri, video ve IMU izlenir; sinyal kesilirse bağlantı gevşektir.</p></article>
+        <article class="test"><div class="test-top"><span class="test-no">T05</span><span class="unit">°</span></div><h3 data-i18n="t5.n">Servo · kontrol yüzeyi</h3><p class="what" data-i18n="t5.w">Sabit kanat ve VTOL'de servo açıları</p><p class="how" data-i18n="t5.h">Kamera ve görüntü işlemeyle komut verilen ve ölçülen açı karşılaştırılır.</p></article>
+        <article class="test"><div class="test-top"><span class="test-no">T06</span><span class="unit" data-i18n="t6.u">°C/sn</span></div><h3 data-i18n="t6.n">Termal analiz</h3><p class="what" data-i18n="t6.w">Aşırı ısınan bileşen</p><p class="how" data-i18n="t6.h">Termal kamerayla mutlak sıcaklık yerine ısınma hızı ölçülür; kötü lehim ve arızalı faz daha hızlı ısınır.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="video" aria-labelledby="h-video">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="vd.k">Tanıtım</p>
+        <h2 id="h-video" data-i18n="vd.h">RTFLabs, 1 dakika 46 saniyede.</h2>
+      </div>
+      <div class="video-box">
+        <video id="promo" controls preload="none" playsinline poster="media/poster.jpg">
+          <source src="media/RTFLabs_Tanitim.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="note" data-i18n="vd.n">Konsept gösterimidir; görseller ve değerler temsilidir.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="veri" aria-labelledby="h-ai">
+    <div class="wrap split">
+      <div>
+        <div class="sec-head" style="margin-bottom:32px">
+          <p class="kicker" data-i18n="ai.k">Yapay zekâ ve veri</p>
+          <h2 id="h-ai" data-i18n="ai.h">Az veriyle öğrenir. Her ürünü kayda geçirir.</h2>
+        </div>
+        <ul class="ticks">
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8 L6 12 L14 3"/></svg><span data-i18n="ai.1">Az sayıda sağlam üründen referans profil öğrenir, normalden sapanı işaretler.</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8 L6 12 L14 3"/></svg><span data-i18n="ai.2">Hatalı numune toplamaya gerek kalmadan yeni bir İHA modeline hızla uyarlanır.</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8 L6 12 L14 3"/></svg><span data-i18n="ai.3">Kabinin içinde, NVIDIA Jetson uç bilgisayarında çalışır.</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8 L6 12 L14 3"/></svg><span data-i18n="ai.4">Kalite paneli: ilk geçiş verimi, hata dağılımı, kök neden analizi ve çoklu hat takibi.</span></li>
+        </ul>
+      </div>
+      <div class="panel" aria-label="Kalite paneli örneği">
+        <div class="panel-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><b data-i18n="pn.t">Kalite Paneli</b><span class="tag" data-i18n="pn.tag">Temsili veri</span></div>
+        <div class="kpis">
+          <div class="kpi"><small data-i18n="pn.k1">İlk geçiş verimi</small><strong>%96,4</strong></div>
+          <div class="kpi"><small data-i18n="pn.k2">Bugün test edilen</small><strong>312</strong></div>
+          <div class="kpi"><small data-i18n="pn.k3">Hatalı ürün</small><strong class="bad">11</strong></div>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th data-i18n="pn.c1">Seri no</th><th data-i18n="pn.c2">Sonuç</th><th data-i18n="pn.c3">Neden</th></tr></thead>
+            <tbody>
+              <tr class="hl"><td class="sn">RTF-2611-0047</td><td><span class="res fail" data-i18n="pn.fail">KALDI</span></td><td data-i18n="pn.r1">M3 pervane dengesizliği</td></tr>
+              <tr><td class="sn">RTF-2611-0048</td><td><span class="res" data-i18n="pn.pass">GEÇTİ</span></td><td>—</td></tr>
+              <tr><td class="sn">RTF-2611-0049</td><td><span class="res" data-i18n="pn.pass2">GEÇTİ</span></td><td>—</td></tr>
+              <tr><td class="sn">RTF-2611-0050</td><td><span class="res fail" data-i18n="pn.fail2">KALDI</span></td><td data-i18n="pn.r4">ESC-2 hızlı ısınma</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="moduler" aria-labelledby="h-mod">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="md.k">Modülerlik</p>
+        <h2 id="h-mod" data-i18n="md.h">Tek kabin. Modüler fikstürler.</h2>
+      </div>
+      <div class="mods">
+        <div class="mod">
+          <svg viewBox="0 0 200 140" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M78 48 L122 92 M122 48 L78 92" stroke-width="5"/><circle cx="66" cy="36" r="20" stroke-width="4"/><circle cx="134" cy="36" r="20" stroke-width="4" fill="#E2231A" stroke="#E2231A"/><circle cx="66" cy="104" r="20" stroke-width="4"/><circle cx="134" cy="104" r="20" stroke-width="4"/><rect x="88" y="58" width="24" height="24" rx="3" stroke-width="3" fill="#0B0B0C"/></svg>
+          <h3>Multirotor</h3>
+          <p data-i18n="md.1">FPV ve ticari platformlar · ilk odak</p>
+        </div>
+        <div class="mod">
+          <svg viewBox="0 0 200 140" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="18" y="60" width="164" height="14" stroke-width="3"/><path d="M100 14 L106 26 V118 L100 126 L94 118 V26 Z" stroke-width="3" fill="#0B0B0C"/><rect x="74" y="108" width="52" height="8" stroke-width="3"/><path d="M60 28 V110 M140 28 V110" stroke-width="4"/><circle cx="60" cy="28" r="13" stroke-width="3"/><circle cx="60" cy="110" r="13" stroke-width="3"/><circle cx="140" cy="28" r="13" stroke-width="3"/><circle cx="140" cy="110" r="13" stroke-width="3"/></svg>
+          <h3>VTOL</h3>
+          <p data-i18n="md.2">Hibrit platformlar</p>
+        </div>
+        <div class="mod">
+          <svg viewBox="0 0 200 140" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="56" width="184" height="14" stroke-width="3"/><rect x="20" y="70" width="40" height="5" stroke-width="2" stroke="#E2231A"/><rect x="140" y="70" width="40" height="5" stroke-width="2"/><path d="M100 14 L106 26 V118 L100 126 L94 118 V26 Z" stroke-width="3" fill="#0B0B0C"/><rect x="70" y="106" width="60" height="9" stroke-width="3"/></svg>
+          <h3 data-i18n="md.3h">Sabit kanat</h3>
+          <p data-i18n="md.3">2 m kanat açıklığına kadar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="neden" aria-labelledby="h-why">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="wy.k">Neden RTFLabs</p>
+        <h2 id="h-why" data-i18n="wy.h">Daha hızlı test. Daha düşük maliyet. Sahada daha az arıza.</h2>
+      </div>
+      <div class="why">
+        <div><h3 data-i18n="wy.1h">Pilottan ve havadan bağımsız</h3><p data-i18n="wy.1p">Günün her saatinde, aynı standartta test.</p></div>
+        <div><h3 data-i18n="wy.2h">Hatalar fabrikada kalır</h3><p data-i18n="wy.2p">İade, garanti ve görev başarısızlığı maliyetleri azalır.</p></div>
+        <div><h3 data-i18n="wy.3h">İzlenebilir kalite</h3><p data-i18n="wy.3p">Her ürün için kayıtlı test raporu; savunma ve kurumsal müşterilere kalite kanıtı.</p></div>
+        <div><h3 data-i18n="wy.4h">Hazır platform</h3><p data-i18n="wy.4p">Orta ölçekli üretici kendi sistemini kurmadan otomatik teste geçer; büyük üretici her yeni hat için özel düzenek geliştirmez.</p></div>
+        <div><h3 data-i18n="wy.5h">Erişilebilir ve çoğaltılabilir</h3><p data-i18n="wy.5p">Robot kollu, proje bazlı çözümlere göre daha düşük maliyetli, modüler bir kabin.</p></div>
+      </div>
+      <p class="biz"><b data-i18n="wy.bizb">İş modeli:</b> <span data-i18n="wy.biz">kabin satışı ve kalite paneli ile yapay zekâ için yıllık yazılım lisansı.</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="yol" aria-labelledby="h-road">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="rd.k">Yol haritası</p>
+        <h2 id="h-road" data-i18n="rd.h">Kabinden test merkezine.</h2>
+      </div>
+      <ol class="road">
+        <li class="now"><span class="now-tag" data-i18n="rd.now">Şu an</span><h3 data-i18n="rd.1h">Prototip kabin</h3><p data-i18n="rd.1p">FPV ve küçük multirotor</p></li>
+        <li><h3 data-i18n="rd.2h">Pilot üretici</h3><p data-i18n="rd.2p">Gerçek bir üretim hattında saha doğrulaması</p></li>
+        <li><h3 data-i18n="rd.3h">Yeni fikstürler</h3><p data-i18n="rd.3p">VTOL, sabit kanat ve çoklu hat paneli</p></li>
+        <li><h3 data-i18n="rd.4h">Test merkezi</h3><p data-i18n="rd.4p">Çevresel ve dayanıklılık testleriyle uçtan uca İHA test merkezi</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="ekip" aria-labelledby="h-team">
+    <div class="wrap team-sum">
+      <figure class="photo">
+        <img src="media/ekip.jpg" width="1400" height="1050" alt="RTFLabs kurucu ekibi: Mesut Ensar Yazar, Mehmet Salih Taştan ve Hüseyin Şevket Akar" loading="lazy">
+        <figcaption data-i18n="tm.cap">Soldan sağa: Mesut Ensar Yazar, Mehmet Salih Taştan, Hüseyin Şevket Akar</figcaption>
+      </figure>
+      <div>
+        <div class="sec-head" style="margin-bottom:24px">
+          <p class="kicker" data-i18n="tm.k">Ekip</p>
+          <h2 id="h-team" data-i18n="tm.h">İHA'yı tasarlamış, kodlamış ve yarışmada uçurmuş bir ekip.</h2>
+        </div>
+        <ul class="names">
+          <li><img src="media/huseyin.jpg" width="48" height="48" alt="" loading="lazy"><div><b>Hüseyin Şevket Akar</b><span data-i18n="tm.1r">Kurucu Ortak · Yapay Zekâ ve Yazılım</span></div></li>
+          <li><img src="media/salih.jpg" width="48" height="48" alt="" loading="lazy"><div><b>Mehmet Salih Taştan</b><span data-i18n="tm.2r">Kurucu Ortak · Donanım ve Sistem Entegrasyonu</span></div></li>
+          <li><img src="media/mesut.jpg" width="48" height="48" alt="" loading="lazy"><div><b>Mesut Ensar Yazar</b><span data-i18n="tm.3r">Kurucu Ortak · Gömülü ve Arayüz Yazılımı</span></div></li>
+        </ul>
+        <div class="award">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="13" cy="10" r="7"/><path d="M8.5 15.5 L6 24 L13 20.5 L20 24 L17.5 15.5"/></svg>
+          <span data-i18n="tm.aw">ALTEK takımıyla TEKNOFEST Savaşan İHA Yarışması 2025 ve 2026 finalisti · 2026 En Özgün Yazılım Ödülü</span>
+        </div>
+        <p style="margin-top:24px"><a class="textlink" href="ekip.html" data-i18n="tm.more">Ekibi tanıyın →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim" aria-labelledby="h-contact">
+    <div class="wrap">
+      <div>
+        <p class="kicker" data-i18n="ct.k">İletişim</p>
+        <h2 id="h-contact" style="margin-top:16px" data-i18n="ct.h">Seri üretim yapıyorsanız konuşalım.</h2>
+        <p data-i18n="ct.p">Pilot üretici olarak kabinin ilk saha kurulumunu birlikte planlayalım. Yatırımcı ve program görüşmelerine de açığız.</p>
+      </div>
+      <div class="mailbox">
+        <span class="kicker" data-i18n="ct.l">E-posta</span>
+        <div class="mail"><span id="mail-addr">huseyinsevketakar@gmail.com</span><button type="button" class="copy-btn" data-copy="#mail-addr" data-i18n="ct.copy">Kopyala</button></div>
+        <a class="btn btn-red" href="iletisim.html#mesaj" data-i18n="ct.form">Mesajınızı hazırlayın</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 RTFLabs · Ankara · <span data-i18n="ft.n">Konsept aşamasında bir girişimdir.</span></span>
+    <nav class="foot-nav" aria-label="Alt menü">
+      <a href="#top" data-i18n="ft.home">Ana sayfa</a>
+      <a href="ekip.html" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+      <a href="iletisim.html#sss" data-i18n="ft.faq">Sık sorulanlar</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+
+</body>
+</html>

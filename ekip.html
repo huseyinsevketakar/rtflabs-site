@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ekip · RTFLabs</title>
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top" id="site-top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="RTFLabs ana sayfa">
+      <svg viewBox="0 0 200 200" width="30" height="30" aria-hidden="true"><path d="M76.4 76.4 L123.6 123.6 M123.6 76.4 L76.4 123.6" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><circle cx="58" cy="58" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="58" r="26" fill="#E2231A" stroke="#E2231A" stroke-width="13"/><circle cx="58" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+      <span>RTF<span class="labs">Labs</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Site">
+      <a href="index.html#nasil" data-i18n="nav.how">Nasıl çalışır</a>
+      <a href="index.html#testler" data-i18n="nav.tests">Testler</a>
+      <a href="index.html#veri" data-i18n="nav.ai">Yapay zekâ</a>
+      <a href="ekip.html" aria-current="page" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menü"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5 H18 M2 10 H18 M2 15 H18"/></svg></button>
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button type="button" id="lang-tr" data-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-red" href="iletisim.html#mesaj" data-i18n="nav.cta">Pilot üretici olun</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero grid-bg" aria-labelledby="h-page">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html" data-i18n="ft.home">Ana sayfa</a> / <span data-i18n="nav.team">Ekip</span></p>
+      <p class="kicker" data-i18n="ek.k">Kurucu ekip · ALTEK takımı kökenli</p>
+      <h1 id="h-page" data-i18n="ek.h">İHA'yı tasarlamayı, uçurmayı ve test etmeyi bilen bir ekip.</h1>
+      <p class="lede" data-i18n="ek.lede">RTFLabs'i, TEKNOFEST Savaşan İHA Yarışması'nda ALTEK takımında iki yıl birlikte çalışan, ODTÜ ve TOBB ETÜ Elektrik-Elektronik Mühendisliği'nden üç arkadaş kurdu. Yarışma İHA'larımızı kendimiz tasarladık, ürettik, uçurduk ve test ettik.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="border-top:0;padding-top:0" aria-label="Ekip fotoğrafı ve başarılar">
+    <div class="wrap" style="display:grid;gap:24px">
+      <figure class="photo">
+        <img src="media/ekip.jpg" width="1400" height="1050" alt="RTFLabs kurucu ekibi: Mesut Ensar Yazar, Mehmet Salih Taştan ve Hüseyin Şevket Akar">
+        <figcaption data-i18n="tm.cap">Soldan sağa: Mesut Ensar Yazar, Mehmet Salih Taştan, Hüseyin Şevket Akar</figcaption>
+      </figure>
+      <div class="stats">
+        <div class="stat"><strong>2 <em data-i18n="ek.s1u">YIL</em></strong><span data-i18n="ek.s1">Aynı takımda birlikte geliştirme ve saha testi</span></div>
+        <div class="stat"><strong>2 <em data-i18n="ek.s2u">FİNAL</em></strong><span data-i18n="ek.s2">TEKNOFEST Savaşan İHA · 2025 ve 2026</span></div>
+        <div class="stat"><strong data-i18n="ek.s3u">ÖDÜL</strong><span data-i18n="ek.s3">2026 En Özgün Yazılım Ödülü</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-people">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="ek.pk">Kurucular</p>
+        <h2 id="h-people" data-i18n="ek.ph">Kim ne yapıyor?</h2>
+      </div>
+      <div class="people">
+        <article class="pcard">
+          <img src="media/huseyin.jpg" width="160" height="160" alt="Hüseyin Şevket Akar">
+          <div>
+            <h2>Hüseyin Şevket Akar</h2>
+            <span class="chip" data-i18n="tm.1r">Kurucu Ortak · Yapay Zekâ ve Yazılım</span>
+            <p class="school" data-i18n="tm.1s">ODTÜ Elektrik-Elektronik Mühendisliği</p>
+            <ul>
+              <li data-i18n="ek.1a">Anomali tespiti ve test karar motoru</li>
+              <li data-i18n="ek.1b">Görüntü işleme ve gömülü yapay zekâ (YOLO, TensorRT, NVIDIA Jetson)</li>
+              <li data-i18n="ek.1c">İş geliştirme, müşteri görüşmeleri ve pilot üretici süreçleri</li>
+              <li data-i18n="ek.1d">Ürün yönetimi ve teknik koordinasyon</li>
+            </ul>
+          </div>
+        </article>
+        <article class="pcard">
+          <img src="media/salih.jpg" width="160" height="160" alt="Mehmet Salih Taştan">
+          <div>
+            <h2>Mehmet Salih Taştan</h2>
+            <span class="chip" data-i18n="tm.2r">Kurucu Ortak · Donanım ve Sistem Entegrasyonu</span>
+            <p class="school" data-i18n="tm.2s">TOBB ETÜ Elektrik-Elektronik Mühendisliği</p>
+            <ul>
+              <li data-i18n="ek.2a">Test kabini, fikstür ve ölçüm donanımı tasarımı</li>
+              <li data-i18n="ek.2b">Elektronik sistem entegrasyonu</li>
+              <li data-i18n="ek.2c">Otonom kabiliyetler ve rota planlama (ArduPilot, DroneKit)</li>
+              <li data-i18n="ek.2d">Saha testlerinin planlanması ve yürütülmesi</li>
+            </ul>
+          </div>
+        </article>
+        <article class="pcard">
+          <img src="media/mesut.jpg" width="160" height="160" alt="Mesut Ensar Yazar">
+          <div>
+            <h2>Mesut Ensar Yazar</h2>
+            <span class="chip" data-i18n="tm.3r">Kurucu Ortak · Gömülü ve Arayüz Yazılımı</span>
+            <p class="school" data-i18n="tm.3s">ODTÜ Elektrik-Elektronik Mühendisliği</p>
+            <ul>
+              <li data-i18n="ek.3a">Uçuş kontrolcüsü haberleşmesi ve test yazılımı (MAVLink, DroneKit, SITL)</li>
+              <li data-i18n="ek.3b">Aviyonik mimari, güç dağıtımı ve sensör/haberleşme entegrasyonu</li>
+              <li data-i18n="ek.3c">Gerçek zamanlı telemetri işleme</li>
+              <li data-i18n="ek.3d">Test sonuçlarını gösteren web arayüzü (kalite paneli)</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-stack">
+    <div class="wrap">
+      <div class="stack">
+        <p class="kicker" data-i18n="ek.sk">Ortak deneyim</p>
+        <h2 id="h-stack" data-i18n="ek.sh">Sahada doğrulanmış teknoloji altyapısı</h2>
+        <p data-i18n="ek.sp">Otonom uçuş, güdüm, rota planlama, gerçek zamanlı görüntü işleme ve gömülü yapay zekâ alanlarında geliştirdiğimiz sistemleri sahada uçurarak doğruladık. RTFLabs'in test yazılımı, uçuş kontrolcüsü haberleşmesi ve yapay zekâ bileşenleri bu altyapının üzerine kuruluyor.</p>
+        <ul class="chips">
+          <li>Cube Orange / ArduPilot</li>
+          <li>NVIDIA Jetson</li>
+          <li>YOLO / TensorRT</li>
+          <li>Gazebo &amp; SITL</li>
+          <li>MAVLink</li>
+          <li data-i18n="ek.cam">Endüstriyel kamera</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="h-cta">
+    <div class="wrap">
+      <div>
+        <p class="kicker" data-i18n="ct.k">İletişim</p>
+        <h2 id="h-cta" style="margin-top:16px" data-i18n="ek.ch">Ekiple tanışmak ister misiniz?</h2>
+        <p data-i18n="ek.cp">Pilot üretici, yatırımcı ya da program temsilcisiyseniz bize yazın; kabini ve yol haritamızı birlikte konuşalım.</p>
+      </div>
+      <div class="mailbox">
+        <span class="kicker" data-i18n="ct.l">E-posta</span>
+        <div class="mail"><span id="mail-addr">huseyinsevketakar@gmail.com</span><button type="button" class="copy-btn" data-copy="#mail-addr" data-i18n="ct.copy">Kopyala</button></div>
+        <a class="btn btn-red" href="iletisim.html#mesaj" data-i18n="ct.form">Mesajınızı hazırlayın</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 RTFLabs · Ankara · <span data-i18n="ft.n">Konsept aşamasında bir girişimdir.</span></span>
+    <nav class="foot-nav" aria-label="Alt menü">
+      <a href="index.html" data-i18n="ft.home">Ana sayfa</a>
+      <a href="ekip.html" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+      <a href="iletisim.html#sss" data-i18n="ft.faq">Sık sorulanlar</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

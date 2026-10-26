@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>İletişim · RTFLabs</title>
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top" id="site-top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="RTFLabs ana sayfa">
+      <svg viewBox="0 0 200 200" width="30" height="30" aria-hidden="true"><path d="M76.4 76.4 L123.6 123.6 M123.6 76.4 L76.4 123.6" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><circle cx="58" cy="58" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="58" r="26" fill="#E2231A" stroke="#E2231A" stroke-width="13"/><circle cx="58" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/><circle cx="142" cy="142" r="26" fill="none" stroke="currentColor" stroke-width="13"/></svg>
+      <span>RTF<span class="labs">Labs</span></span>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Site">
+      <a href="index.html#nasil" data-i18n="nav.how">Nasıl çalışır</a>
+      <a href="index.html#testler" data-i18n="nav.tests">Testler</a>
+      <a href="index.html#veri" data-i18n="nav.ai">Yapay zekâ</a>
+      <a href="ekip.html" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" aria-current="page" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menü"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5 H18 M2 10 H18 M2 15 H18"/></svg></button>
+    <div class="lang" role="group" aria-label="Dil / Language">
+      <button type="button" id="lang-tr" data-lang="tr" aria-pressed="true">TR</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-red" href="#mesaj" data-i18n="nav.cta">Pilot üretici olun</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero grid-bg" aria-labelledby="h-page">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html" data-i18n="ft.home">Ana sayfa</a> / <span data-i18n="nav.contact">İletişim</span></p>
+      <p class="kicker" data-i18n="ct.k">İletişim</p>
+      <h1 id="h-page" data-i18n="ct.h">Seri üretim yapıyorsanız konuşalım.</h1>
+      <p class="lede" data-i18n="il.lede">RTFLabs konsept ve prototip aşamasında. İlk kabini, ürünlerini bizimle test edecek pilot üreticilerle birlikte geliştirmek istiyoruz.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="border-top:0;padding-top:0" aria-labelledby="h-who">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:28px">
+        <p class="kicker" data-i18n="il.wk">Kimlerle konuşmak istiyoruz</p>
+        <h2 id="h-who" data-i18n="il.wh">Bize ne için yazabilirsiniz?</h2>
+      </div>
+      <div class="cards3">
+        <div class="card key"><h3 data-i18n="il.c1h">Pilot üretici</h3><p data-i18n="il.c1p">Prototip kabini kendi ürünlerinizle deneyin; test prosedürünü İHA'nıza göre birlikte tanımlayalım.</p></div>
+        <div class="card"><h3 data-i18n="il.c2h">Yatırımcılar ve programlar</h3><p data-i18n="il.c2p">Girişimimizi, yol haritamızı ve ekibimizi anlatmak için görüşmeye hazırız.</p></div>
+        <div class="card"><h3 data-i18n="il.c3h">İş birlikleri</h3><p data-i18n="il.c3p">Sensör, ölçüm ve otomasyon alanında birlikte çalışabileceğimiz firma ve kurumlarla tanışmak istiyoruz.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="mesaj" aria-labelledby="h-form">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="il.fk">Mesaj hazırlayıcı</p>
+        <h2 id="h-form" data-i18n="il.fh">Birkaç bilgi verin, e-postanız hazır olsun.</h2>
+        <p data-i18n="il.fp">Formu doldurun; sağda e-posta metniniz oluşur. Metni kopyalayıp kendi e-postanızdan bize gönderin.</p>
+      </div>
+      <div class="form-grid">
+        <form class="form" id="composer" novalidate>
+          <div class="field"><label for="f-name" data-i18n="f.name">Ad soyad</label><input id="f-name" name="name" type="text" autocomplete="name" data-i18n-ph="ph.name" placeholder="Adınız ve soyadınız"></div>
+          <div class="field"><label for="f-company" data-i18n="f.company">Şirket</label><input id="f-company" name="company" type="text" autocomplete="organization" data-i18n-ph="ph.company" placeholder="Şirket adı"></div>
+          <div class="field"><label for="f-topic" data-i18n="f.topic">Konu</label>
+            <select id="f-topic" name="topic">
+              <option value="pilot" data-i18n="o.pilot">Pilot üretici olmak istiyorum</option>
+              <option value="invest" data-i18n="o.invest">Yatırım / hızlandırma programı</option>
+              <option value="collab" data-i18n="o.collab">İş birliği</option>
+              <option value="other" data-i18n="o.other">Diğer</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-type" data-i18n="f.type">Ürettiğiniz İHA tipi</label>
+            <select id="f-type" name="type">
+              <option value="multi" data-i18n="o.multi">Multirotor / FPV</option>
+              <option value="vtol" data-i18n="o.vtol">VTOL</option>
+              <option value="fixed" data-i18n="o.fixed">Sabit kanat</option>
+              <option value="many" data-i18n="o.many">Birden fazla tip</option>
+              <option value="none" data-i18n="o.none">Üretici değilim</option>
+            </select>
+          </div>
+          <div class="field full"><label for="f-vol" data-i18n="f.vol">Aylık üretim adedi</label>
+            <select id="f-vol" name="vol">
+              <option value="v0" data-i18n="o.v0">Belirtmek istemiyorum</option>
+              <option value="v1" data-i18n="o.v1">50'den az</option>
+              <option value="v2" data-i18n="o.v2">50 – 500</option>
+              <option value="v3" data-i18n="o.v3">500'den fazla</option>
+            </select>
+          </div>
+          <div class="field full"><label for="f-msg" data-i18n="f.msg">Mesajınız</label><textarea id="f-msg" name="msg" data-i18n-ph="ph.msg" placeholder="Şu an üretilen İHA'ları nasıl test ediyorsunuz? En çok hangi hatalarla karşılaşıyorsunuz?"></textarea></div>
+        </form>
+        <div class="preview">
+          <span class="kicker" data-i18n="il.pv">E-posta metni</span>
+          <pre id="preview" aria-live="polite"></pre>
+          <div class="row">
+            <button type="button" class="btn btn-red copy-btn" data-copy="#preview" data-i18n="il.copy">Metni kopyala</button>
+            <a class="btn btn-line" id="mailto-link" href="mailto:huseyinsevketakar@gmail.com" data-i18n="il.open">E-posta uygulamasında aç</a>
+          </div>
+          <p class="hint" data-i18n="il.hint">Bu sayfa mesaj göndermez. Metni kopyalayıp aşağıdaki adrese kendi e-postanızdan gönderin.</p>
+          <div class="side-info">
+            <div class="info-row"><small data-i18n="ct.l">E-posta</small><div class="mail"><span id="mail-addr">huseyinsevketakar@gmail.com</span><button type="button" class="copy-btn" data-copy="#mail-addr" data-i18n="ct.copy">Kopyala</button></div></div>
+            <div class="info-row"><small data-i18n="il.loc">Konum</small><span>Ankara</span></div>
+            <div class="info-row"><small>LinkedIn</small><span data-i18n="il.liv">Şirket sayfamız yakında açılıyor.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="sss" aria-labelledby="h-faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="faq.k">Sık sorulanlar</p>
+        <h2 id="h-faq" data-i18n="faq.h">Üreticilerin ilk sorduğu sorular</h2>
+      </div>
+      <div class="faq">
+        <details><summary data-i18n="q1">Hangi İHA'ları test edebiliyorsunuz?</summary><p data-i18n="a1">İlk odağımız FPV ve küçük multirotorlar. Modüler fikstürlerle VTOL ve 2 metre kanat açıklığına kadar sabit kanat İHA'lar yol haritamızda.</p></details>
+        <details><summary data-i18n="q2">Bir test ne kadar sürüyor?</summary><p data-i18n="a2">Hedefimiz ürün başına yaklaşık 5 dakika. Kesin süre, İHA tipine ve test reçetesine göre prototip aşamasında netleşecek.</p></details>
+        <details><summary data-i18n="q3">Kabin üretim hattıma nasıl yerleşiyor?</summary><p data-i18n="a3">Kabin bant sonuna konumlanır. Operatör İHA'yı fikstüre yerleştirir ve testi başlatır; kabini mevcut hatta büyük bir değişiklik gerektirmeyecek şekilde tasarlıyoruz.</p></details>
+        <details><summary data-i18n="q4">Pilot üretici olmak ne anlama geliyor?</summary><p data-i18n="a4">Prototip kabini kendi ürünlerinizle denemek, test prosedürünü bizimle birlikte tanımlamak ve geri bildirim vermek. Koşulları birlikte konuşuruz.</p></details>
+        <details><summary data-i18n="q5">Yapay zekâ için ne kadar veri gerekiyor?</summary><p data-i18n="a5">Sistem, az sayıda sağlam üründen referans profil çıkaracak şekilde tasarlanıyor. Hatalı numune toplamanız gerekmiyor.</p></details>
+        <details><summary data-i18n="q6">Ürün şu an satışta mı?</summary><p data-i18n="a6">Hayır. RTFLabs konsept ve prototip aşamasında; ilk kabini pilot üreticilerle birlikte geliştiriyoruz.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 RTFLabs · Ankara · <span data-i18n="ft.n">Konsept aşamasında bir girişimdir.</span></span>
+    <nav class="foot-nav" aria-label="Alt menü">
+      <a href="index.html" data-i18n="ft.home">Ana sayfa</a>
+      <a href="ekip.html" data-i18n="nav.team">Ekip</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+      <a href="#sss" data-i18n="ft.faq">Sık sorulanlar</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
