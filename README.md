@@ -1,4 +1,4 @@
-# RTFLabs web sitesi
+# RTFLab web sitesi
 
 Sade, statik bir site: derleme (build) adımı yok, sunucu gerekmiyor. Dosyaları herhangi bir statik barındırma servisine olduğu gibi yüklemek yeterli.
 
@@ -26,9 +26,9 @@ Bilgisayarda denemek için `index.html` dosyasını tarayıcıda açın.
 
 ## Alan adını bağlama (GitHub Pages)
 
-1. Settings → Pages → Custom domain alanına alan adını yazın (ör. `rtflabs.com`) → Save.
+1. Settings → Pages → Custom domain alanına alan adını yazın (ör. `rtflab.com`) → Save.
 2. Alan adını aldığınız firmanın DNS panelinde:
-   - Kök alan adı (`rtflabs.com`) için dört **A** kaydı: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Kök alan adı (`rtflab.com`) için dört **A** kaydı: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `www` için bir **CNAME** kaydı: `<kullanıcı-adı>.github.io`
 3. DNS yayıldıktan sonra (birkaç dakika ile birkaç saat) Settings → Pages'te "Enforce HTTPS" kutusunu işaretleyin.
 

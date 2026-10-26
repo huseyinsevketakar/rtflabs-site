@@ -24,7 +24,7 @@
     "t4.u": "dropout", "t4.n": "Shake screen", "t4.w": "Loose connectors, bad solder", "t4.h": "Telemetry, video and IMU are monitored under a short shake; a dropout means a loose connection.",
     "t5.n": "Servo · control surfaces", "t5.w": "Servo angles on fixed-wing and VTOL", "t5.h": "Commanded and measured angles are compared using a camera and machine vision.",
     "t6.u": "°C/s", "t6.n": "Thermal analysis", "t6.w": "Overheating components", "t6.h": "A thermal camera tracks heating rate rather than absolute temperature; bad solder and failing phases heat up faster.",
-    "vd.k": "Overview", "vd.h": "RTFLabs in 1 minute 46 seconds.", "vd.n": "Concept visualization; visuals and values are illustrative.",
+    "vd.k": "Overview", "vd.h": "RTFLab in 1 minute 46 seconds.", "vd.n": "Concept visualization; visuals and values are illustrative.",
     "ai.k": "AI and data", "ai.h": "Learns from little data. Logs every unit.",
     "ai.1": "Learns a reference profile from a small set of good units and flags anything that deviates.",
     "ai.2": "Adapts quickly to a new UAV model without collecting defective samples.",
@@ -34,7 +34,7 @@
     "pn.c1": "Serial", "pn.c2": "Result", "pn.c3": "Cause", "pn.fail": "FAIL", "pn.fail2": "FAIL", "pn.pass": "PASS", "pn.pass2": "PASS",
     "pn.r1": "M3 prop imbalance", "pn.r4": "ESC-2 fast heating",
     "md.k": "Modularity", "md.h": "One cell. Modular fixtures.", "md.1": "FPV and commercial platforms · initial focus", "md.2": "Hybrid platforms", "md.3h": "Fixed-wing", "md.3": "Up to 2 m wingspan",
-    "wy.k": "Why RTFLabs", "wy.h": "Faster testing. Lower cost. Fewer field failures.",
+    "wy.k": "Why RTFLab", "wy.h": "Faster testing. Lower cost. Fewer field failures.",
     "wy.1h": "Independent of pilots and weather", "wy.1p": "The same standard, at any hour of the day.",
     "wy.2h": "Defects stay in the factory", "wy.2p": "Fewer returns, warranty claims and mission failures.",
     "wy.3h": "Traceable quality", "wy.3p": "A logged test report for every unit; quality evidence for defense and enterprise customers.",
@@ -53,16 +53,16 @@
     "ct.k": "Contact", "ct.h": "If you build UAVs at scale, let's talk.", "ct.p": "Become a pilot manufacturer and plan the cell's first deployment with us. We are also open to investor and program conversations.",
     "ct.l": "Email", "ct.copy": "Copy", "ct.form": "Draft your message",
     "ek.k": "Founding team · from team ALTEK", "ek.h": "A team that knows how to design, fly and test UAVs.",
-    "ek.lede": "RTFLabs was founded by three friends from METU and TOBB ETU Electrical and Electronics Engineering who worked together for two years on team ALTEK in the TEKNOFEST Fighting UAV Competition. We designed, built, flew and tested our own competition UAVs.",
+    "ek.lede": "RTFLab was founded by three friends from METU and TOBB ETU Electrical and Electronics Engineering who worked together for two years on team ALTEK in the TEKNOFEST Fighting UAV Competition. We designed, built, flew and tested our own competition UAVs.",
     "ek.s1u": "YEARS", "ek.s1": "Building and field-testing together on the same team", "ek.s2u": "FINALS", "ek.s2": "TEKNOFEST Fighting UAV · 2025 and 2026", "ek.s3u": "AWARD", "ek.s3": "2026 Most Original Software Award",
     "ek.pk": "Founders", "ek.ph": "Who does what?",
     "ek.1a": "Anomaly detection and the test decision engine", "ek.1b": "Computer vision and embedded AI (YOLO, TensorRT, NVIDIA Jetson)", "ek.1c": "Business development, customer meetings and pilot programs", "ek.1d": "Product management and technical coordination",
     "ek.2a": "Test cell, fixture and measurement hardware design", "ek.2b": "Electronic systems integration", "ek.2c": "Autonomy and route planning (ArduPilot, DroneKit)", "ek.2d": "Planning and running field tests",
     "ek.3a": "Flight-controller communication and test software (MAVLink, DroneKit, SITL)", "ek.3b": "Avionics architecture, power distribution and sensor/comms integration", "ek.3c": "Real-time telemetry processing", "ek.3d": "Web interface that shows test results (quality dashboard)",
     "ek.sk": "Shared experience", "ek.sh": "A field-proven technology base",
-    "ek.sp": "We have validated the systems we built for autonomous flight, guidance, route planning, real-time computer vision and embedded AI by flying them in the field. RTFLabs' test software, flight-controller communication and AI components are built on this foundation.",
+    "ek.sp": "We have validated the systems we built for autonomous flight, guidance, route planning, real-time computer vision and embedded AI by flying them in the field. RTFLab's test software, flight-controller communication and AI components are built on this foundation.",
     "ek.cam": "Industrial camera", "ek.ch": "Want to meet the team?", "ek.cp": "If you are a manufacturer, investor or program representative, write to us and let's talk about the cell and our roadmap.",
-    "il.lede": "RTFLabs is in the concept and prototype phase. We want to build the first cell together with pilot manufacturers who will test their products with us.",
+    "il.lede": "RTFLab is in the concept and prototype phase. We want to build the first cell together with pilot manufacturers who will test their products with us.",
     "il.wk": "Who we want to talk to", "il.wh": "What can you write to us about?",
     "il.c1h": "Pilot manufacturer", "il.c1p": "Try the prototype cell with your own products, and let's define the test procedure for your UAV together.",
     "il.c2h": "Investors and programs", "il.c2p": "We are happy to walk you through the startup, our roadmap and our team.",
@@ -82,7 +82,7 @@
     "q3": "How does the cell fit into my production line?", "a3": "The cell sits at the end of the line. An operator places the UAV in the fixture and starts the test; we are designing it to fit your existing line without major changes.",
     "q4": "What does being a pilot manufacturer mean?", "a4": "Trying the prototype cell with your own products, defining the test procedure with us and giving feedback. We agree on the terms together.",
     "q5": "How much data does the AI need?", "a5": "The system is designed to build a reference profile from a small number of good units. You don't need to collect defective samples.",
-    "q6": "Is the product for sale yet?", "a6": "No. RTFLabs is in the concept and prototype phase; we are developing the first cell together with pilot manufacturers."
+    "q6": "Is the product for sale yet?", "a6": "No. RTFLab is in the concept and prototype phase; we are developing the first cell together with pilot manufacturers."
   };
   var COPIED = { tr: "Kopyalandı", en: "Copied" };
   var EMAIL = "huseyinsevketakar@gmail.com";
@@ -147,9 +147,9 @@
     var en = current === "en";
     var name = form.elements.name.value.trim(), company = form.elements.company.value.trim(), msg = form.elements.msg.value.trim();
     var topic = optText(form.elements.topic), type = optText(form.elements.type), vol = optText(form.elements.vol);
-    var subject = "RTFLabs · " + topic + (company ? " · " + company : "");
+    var subject = "RTFLab · " + topic + (company ? " · " + company : "");
     var lines = [];
-    lines.push((en ? "Subject: " : "Konu: ") + subject, "", en ? "Hello RTFLabs team," : "Merhaba RTFLabs ekibi,", "");
+    lines.push((en ? "Subject: " : "Konu: ") + subject, "", en ? "Hello RTFLab team," : "Merhaba RTFLab ekibi,", "");
     lines.push((en ? "Name: " : "Ad soyad: ") + (name || "—"));
     lines.push((en ? "Company: " : "Şirket: ") + (company || "—"));
     lines.push((en ? "UAV type: " : "İHA tipi: ") + type);

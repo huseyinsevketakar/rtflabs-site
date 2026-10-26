@@ -1,4 +1,4 @@
-/* RTFLabs — ortak stil. Layout: test protokolü gibi okunan sayfalar; teknik çizim ızgarası, mono ölçü etiketleri, kırmızı yalnızca "karar/hata" vurgusu */
+/* RTFLab — ortak stil. Layout: test protokolü gibi okunan sayfalar; teknik çizim ızgarası, mono ölçü etiketleri, kırmızı yalnızca "karar/hata" vurgusu */
 :root{
   color-scheme: dark;
   --bg:#0B0B0C; --panel:#121215; --panel-2:#18181C; --line:#26262C; --line-2:#3A3A42;
