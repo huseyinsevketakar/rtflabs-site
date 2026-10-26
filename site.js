@@ -75,7 +75,7 @@
     "o.v0": "Prefer not to say", "o.v1": "Fewer than 50", "o.v2": "50 – 500", "o.v3": "More than 500",
     "il.pv": "Email text", "il.copy": "Copy text", "il.open": "Open in email app",
     "il.hint": "This page doesn't send messages. Copy the text and send it from your own email to the address below.",
-    "il.loc": "Location", "il.liv": "Our company page is launching soon.",
+    "il.loc": "Location",
     "faq.k": "FAQ", "faq.h": "What manufacturers ask first",
     "q1": "Which UAVs can you test?", "a1": "Our initial focus is FPV and small multirotors. VTOL and fixed-wing UAVs up to 2 m wingspan are on our roadmap through modular fixtures.",
     "q2": "How long does a test take?", "a2": "We are targeting about 5 minutes per unit. The exact time will be set during the prototype phase, depending on the UAV type and the test recipe.",

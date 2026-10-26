@@ -39,6 +39,6 @@ GitHub reposunu bu servislerden birine bağlayın. Build komutu boş kalsın, ya
 ## Sık yapılacak değişiklikler
 
 - **E-posta adresi:** `huseyinsevketakar@gmail.com` adresini tüm dosyalarda "bul ve değiştir" ile değiştirin (`index.html`, `ekip.html`, `iletisim.html`, `site.js`).
-- **LinkedIn:** `iletisim.html` içindeki "Şirket sayfamız yakında açılıyor." satırını şirket sayfası linkiyle değiştirin.
+- **LinkedIn:** Şirket sayfası (`https://www.linkedin.com/company/rtflab/`) iletişim sayfasında ve tüm sayfaların alt menüsünde bağlı.
 - **Metinler:** Türkçe metinler HTML dosyalarında, İngilizceleri `site.js` içindeki `EN` sözlüğünde. Bir metni değiştirirken aynı `data-i18n` anahtarının İngilizcesini de güncelleyin.
 - **Kalite paneli** bölümündeki rakamlar temsilidir ve öyle etiketlenmiştir; gerçek veri olmadan değiştirmeyin.
